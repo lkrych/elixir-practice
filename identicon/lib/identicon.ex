@@ -78,7 +78,7 @@ defmodule Identicon do
     :egd.render(image)
   end
 
-  def draw_image(image, filename) do
+  def save_image(image, filename) do
     File.write("#{filename}.png", image)
   end
 
