@@ -41,6 +41,12 @@ defmodule Cards do
 
   @doc """
     Uses Enum to check if deck contains a card (string)
+
+    ## Examples
+
+      iex> deck = Cards.create_deck
+      iex> Cards.contains?(deck, "Ace of Spades")
+      true
   """
   def contains?(deck, card) do
     Enum.member?(deck, card)
@@ -66,13 +72,6 @@ defmodule Cards do
 
   @doc """
     Creates a hand from a shuffled deck
-
-  ## Examples
-
-      iex> 
-      iex> {hand, deck} = Cards.create_hand(5)
-      iex> hand
-      ["A", "List", "of", "5", "cards"]
   """
   def create_hand(hand_size) do
     #use pipe operator to pass return value as first arg to next func
