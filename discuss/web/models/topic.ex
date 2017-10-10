@@ -6,8 +6,8 @@ defmodule Discuss.Topic do
     end
 
     def changeset(struct, params \\ %{}) do
-    struct
-    |> cast(params, [:title])
-    |> validate_required([:title])
+        struct
+        |> cast(params, [:title])
+        |> validate_required([:title])
     end
 end
