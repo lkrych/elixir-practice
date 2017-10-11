@@ -14,7 +14,8 @@ defmodule Discuss.TopicController do
 
         case Repo.insert(changeset) do
             {:ok, post} -> IO.inspect(post)
-            {:error, changset} -> IO.inspect(changeset)
+            {:error, changset} -> 
+                render conn, "new.html", changeset: changeset
         end
     end
 end
