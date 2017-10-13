@@ -30,5 +30,3 @@ config :ueberauth, Ueberauth,
   proviers: [
     github: { Ueberauth.Strategy.Github, []}
   ]
-
-config :ueberauth, Ueberauth.Strategy.Github.Oauth
