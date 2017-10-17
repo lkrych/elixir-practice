@@ -1,5 +1,5 @@
 defmodule Discuss.Plugs.RequireAuth do
-  import Plug.conn
+  import Plug.Conn
   import Phoenix.Controller
 
   alias Discuss.Router.Helpers
